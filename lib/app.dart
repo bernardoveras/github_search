@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:github_search/navigation/navigation.dart';
+import 'package:github_search/shared/theme/theme.dart';
 
 class App extends StatelessWidget {
   final String initialRoute;
@@ -13,6 +14,7 @@ class App extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             initialRoute: initialRoute,
             getPages: Nav.routes,
+            theme: theme(context),
             defaultTransition: Transition.cupertino,
             builder: (context, child) => GestureDetector(
               onTap: () {
