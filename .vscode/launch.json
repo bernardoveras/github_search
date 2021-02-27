@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "name": "Flutter: Run Tests",
+      "type": "dart",
+      "request": "launch",
+      "program": "./test/"
+    },
+    {
+      "name": "Flutter: Run App",
+      "type": "dart",
+      "request": "launch",
+      "program": "main.dart"
+    }
+  ]
+}

@@ -1,8 +1,6 @@
 name: github_search
-description: A new Flutter project.
-
+description: Github Search
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
