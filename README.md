@@ -70,15 +70,4 @@ Para os ícones, recomendamos que utilize alguma biblioteca, como o Font Awesome
 ## Tipo de fonte:
 - Roboto
 
-# Compartilhe!
-Inicie seu projeto utilizando esse template no seu github como um repositório público<br>
-Faça um print, gif ou vídeo e compartilhe o resultado com a #devchallenge ou marcando nosso perfil @devchallenge!<br>
-
 Desafio criado por  <a href="https://www.linkedin.com/in/diego-de-oliveira-brito/">Diego Oliveira</a> :)
-
-# Comunidade DevChallenge
-Site: https://www.devchallenge.com.br/ <br>
-Discord: https://discord.gg/yvYXhGj <br>
-Linkedin: https://www.linkedin.com/company/devchallenge/<br>
-Twitter: https://twitter.com/dev_challenge<br>
-Instagram: https://www.instagram.com/devchallenge/<br>
