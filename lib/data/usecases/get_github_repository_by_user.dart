@@ -10,13 +10,16 @@ class GetGithubRepositoryByUser implements IGetGithubRepositoryByUser {
   final IHttpClient client;
   GetGithubRepositoryByUser(this.client);
   @override
-  Future<Repository> call(String user) async {
-    final url = "${ConfigEnvironments.getEnvironments()['apiUrl']}/users/$user/repos";
+  Future<List<Repository>> call(String user) async {
+    final url =
+        "${ConfigEnvironments.getEnvironments()['apiUrl']}/users/$user/repos";
 
     try {
       final response = await client.get(url);
       return response?.body?.isNotEmpty == true
-          ? RepositoryModel.fromJson(jsonDecode(response.body)).toEntity()
+          ? (jsonDecode(response.body) as List)
+              .map((e) => RepositoryModel.fromJson(e).toEntity())
+              .toList()
           : null;
     } catch (error) {
       throw error;

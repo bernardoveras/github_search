@@ -1,5 +1,5 @@
 import 'package:github_search/domain/entities/repository.dart';
 
 abstract class IGetGithubRepositoryByUser{
-  Future<Repository> call(String user);
+  Future<List<Repository>> call(String user);
 }
