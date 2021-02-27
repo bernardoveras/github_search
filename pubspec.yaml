@@ -27,5 +27,17 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/logo-horizontal.svg
-    - assets/logo-vertical.svg
+    - assets/images/logo-horizontal.svg
+    - assets/images/logo-vertical.svg
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Roboto-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
