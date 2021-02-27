@@ -9,7 +9,7 @@ class ProfileController extends GetxController {
   ProfileController(this.getGithubRepositoryByUser);
 
   User profile;
-  RxList<Repository> repositories = RxList<Repository>();
+  RxList<Repository> repositories;
   RxBool isLoading = false.obs;
 
   Future<void> findRepositories() async {
@@ -19,8 +19,12 @@ class ProfileController extends GetxController {
       if (profile?.user?.ehNuloOuVazio == false) {
         var response = await getGithubRepositoryByUser(profile.user);
         if (response != null) {
+          repositories = RxList<Repository>();
           repositories.value = response;
-          profile.totalStars = repositories.map((e) => e.starsCount).toList().reduce((value, element) => value + element);
+          profile.totalStars = repositories
+              .map((e) => e.starsCount)
+              .toList()
+              .reduce((value, element) => value + element);
         }
       }
     } catch (e) {

@@ -64,7 +64,7 @@ class ProfilePage extends GetView<ProfileController> {
                         SizedBox(height: 30),
                         Obx(
                           () => ListRepositories(
-                            controller.repositories.value,
+                            controller.repositories?.value,
                             controller.isLoading.value,
                           ),
                         ),

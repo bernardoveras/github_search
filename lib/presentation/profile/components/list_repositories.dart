@@ -9,20 +9,37 @@ class ListRepositories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return repositories?.isEmpty == false
-        ? ListView.builder(
-            shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: repositories.length,
-            itemBuilder: (_, index) {
-              var repository = repositories[index];
-              return ItemRepository(repository);
-            },
-          )
-        : _buildEmptyList();
+    return repositories == null
+        ? _buildLoadingList()
+        : repositories?.length == 0
+            ? Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(5),
+                  color: Colors.black.withOpacity(0.2),
+                ),
+                margin: EdgeInsets.only(left: 50, right: 50, top: 50),
+                height: 80,
+                alignment: Alignment.center,
+                child: Text(
+                  'Sem resultado',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              )
+            : ListView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: repositories.length,
+                itemBuilder: (_, index) {
+                  var repository = repositories[index];
+                  return ItemRepository(repository);
+                },
+              );
   }
 
-  Widget _buildEmptyList() {
+  Widget _buildLoadingList() {
     return ListView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
