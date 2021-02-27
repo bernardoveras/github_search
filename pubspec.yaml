@@ -1,0 +1,31 @@
+name: github_search
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  get: ^3.25.6  
+  flutter_svg: ^0.19.1
+  flutter:
+    sdk: flutter
+  kayta:
+    git:
+      url: git://github.com/bernardoveras/kayta.git
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/logo-horizontal.svg
+    - assets/logo-vertical.svg
