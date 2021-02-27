@@ -7,8 +7,8 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  get: ^3.25.6  
-  flutter_svg: ^0.19.1
+  get: ^3.25.6
+  responsive_framework: ^0.0.14
   flutter:
     sdk: flutter
   kayta:
@@ -27,8 +27,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/logo-horizontal.svg
-    - assets/images/logo-vertical.svg
+    - assets/images/logo-horizontal.png
+    - assets/images/logo-vertical.png
 
   fonts:
     - family: Roboto
