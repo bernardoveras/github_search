@@ -11,13 +11,13 @@ class Nav {
       name: Routes.HOME,
       page: () => HomePage(),
       binding: HomeBinding(),
-      transition: Transition.noTransition,
+      transition: Transition.cupertino,
     ),
     GetPage(
       name: Routes.PROFILE,
       page: () => ProfilePage(),
       binding: ProfileBinding(),
-      transition: Transition.noTransition,
+      transition: Transition.cupertino,
     ),
   ];
 }
