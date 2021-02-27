@@ -40,6 +40,12 @@ void main() {
     expect(response, isA<List<Repository>>());
   });
 
+  test('Deve retornar o texto com emoji', () async {
+    final response = await sut(user);
+
+    expect(response[2].description, '🚀 Desafio do DevChallenge!');
+  });
+
   test('Deve retornar null caso HttpClient retorne 200 sem body', () async {
     mockHttpData(null);
 
