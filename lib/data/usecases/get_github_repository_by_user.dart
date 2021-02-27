@@ -16,8 +16,8 @@ class GetGithubRepositoryByUser implements IGetGithubRepositoryByUser {
 
     try {
       final response = await client.get(url);
-      return response?.body?.isNotEmpty == true
-          ? (jsonDecode(response.body) as List)
+      return response?.bodyBytes?.isNotEmpty == true
+          ? (jsonDecode(utf8.decode(response.bodyBytes)) as List)
               .map((e) => RepositoryModel.fromJson(e).toEntity())
               .toList()
           : null;
