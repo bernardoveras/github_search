@@ -14,4 +14,14 @@ class Repository {
     @required this.starsCount,
     @required this.forksCount,
   });
+
+  factory Repository.empty() {
+    return Repository(
+      description: '',
+      forksCount: 0,
+      language: '',
+      name: '',
+      starsCount: 0,
+    );
+  }
 }

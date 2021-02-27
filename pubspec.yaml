@@ -8,12 +8,13 @@ environment:
 
 dependencies:
   get: ^3.25.6
-  responsive_framework: ^0.0.14
-  flutter:
-    sdk: flutter
   kayta:
     git:
       url: git://github.com/bernardoveras/kayta.git
+  responsive_framework: ^0.0.14
+  font_awesome_flutter: ^8.11.0
+  flutter:
+    sdk: flutter
   cupertino_icons: ^1.0.0
 
 dev_dependencies:

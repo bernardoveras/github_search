@@ -11,6 +11,7 @@ class User {
   final int followers;
   final int following;
   final int publicRepos;
+  int totalStars;
 
   User({
     @required this.name,
@@ -23,5 +24,6 @@ class User {
     @required this.followers,
     @required this.following,
     @required this.publicRepos,
+    this.totalStars = 0,
   });
 }

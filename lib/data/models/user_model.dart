@@ -14,8 +14,9 @@ class UserModel extends User {
     @required int followers,
     @required int following,
     @required int publicRepos,
+    int totalStars,
   }) : super(
-          avatarUrl: name,
+          avatarUrl: avatarUrl,
           bio: bio,
           company: company,
           email: email,
@@ -25,6 +26,7 @@ class UserModel extends User {
           name: name,
           publicRepos: publicRepos,
           user: user,
+          totalStars: totalStars,
         );
 
   /// Function to convert `JSON` to `UserModel`
@@ -41,7 +43,7 @@ class UserModel extends User {
       location: json['location'],
       name: json['name'],
       publicRepos: json['public_repos'],
-      user: json['user'],
+      user: json['login'],
       avatarUrl: json['avatar_url'],
     );
   }
@@ -49,6 +51,8 @@ class UserModel extends User {
   /// The entity `User` must be used in the `Domain` and `Presentation` layers.
   /// The Model `UserModel` should only be used in the `Data` layer
   User toEntity() => User(
+        name: name,
+        user: user,
         avatarUrl: avatarUrl,
         bio: bio,
         company: company,
@@ -56,8 +60,6 @@ class UserModel extends User {
         followers: followers,
         following: following,
         location: location,
-        name: name,
         publicRepos: publicRepos,
-        user: user,
       );
 }

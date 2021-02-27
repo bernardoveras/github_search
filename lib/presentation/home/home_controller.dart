@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:github_search/domain/usecases/get_github_profile.dart';
+import 'package:github_search/navigation/routes.dart';
 import 'package:kayta/extensions.dart';
 
 class HomeController extends GetxController {
@@ -16,6 +17,7 @@ class HomeController extends GetxController {
         var response = await getGithubProfile(username.value);
         if (response != null) {
           print('Usuário encontrado: ${response.name}');
+          Get.toNamed(Routes.PROFILE, arguments: response);
         }
       }
     } catch (e) {
