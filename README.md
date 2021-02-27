@@ -7,10 +7,8 @@
 
 ## Índice
 
-* [Devchallenge](#devchallenge) 
 * [Desafio](#desafio)
 * [Techs](#techs)
-* [Como começar](#como-começar)
 * [Dicas](#dicas)  
   * [Cores](#cores)
   * [Modelo](#modelo)
@@ -18,11 +16,8 @@
   * [Icones](#icones)
   * [Tipo de fonte](#tipo-de-fonte)
 
-# Devchallenge
-<a href="https://devchallenge.now.sh/"> DevChallenge</a> permite que você evolua suas skills como programador! Participe da nossa <a href="https://discord.gg/yvYXhGj">comunidade</a> o/
-
 # Desafio
-Seu desafio é criar um site de busca de usuarios e repositorios do github através da sua API! O modelo final está disponível na pasta "design"
+O desafio é criar um app/site de busca de usuarios e repositorios do github através da sua API! O modelo final está disponível na pasta "design"
 
 ## Requisitos:
 - A pagina inicial precisa ter um campo de busca, a busca devera ser feita ao clicar no botão de busca ou ao clicar no tecla Enter<br>
@@ -34,12 +29,7 @@ Seu desafio é criar um site de busca de usuarios e repositorios do github atrav
 - Flutter
 - Dart
 - GetX
-
-# Como começar:
-1 - Use esse template (clicando em Use this template) ou faça um fork deste repositório com o código inicial<br>
-2 - Leia as instruções no readme.md<br>
-3 - Comece a codar! Sinta-se livre para utilizar o fluxo de trabalho que ache mais confortável<br>
-4 - Compartilhe seu resultado com a comunidade! #devchallenge
+- Git
 
 # Dicas
 
@@ -53,7 +43,6 @@ Background: #232324<br>
 Black: #201F1F<br>
 Purple: #8752CC<br>
 Gray: #B2B2B2<br>
-
 
 ## Modelo:
 O modelo final desktop está disponível na pasta `.github`<br>
