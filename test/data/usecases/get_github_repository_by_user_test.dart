@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:github_search/config.dart';
 import 'package:github_search/data/usecases/get_github_repository_by_user.dart';
 import 'package:github_search/domain/entities/repository.dart';
-import 'package:github_search/domain/entities/user.dart';
 import 'package:kayta/services/http/errors/http_errors.dart';
 import 'package:kayta/services/http/infraestructure/http_client.dart';
 import 'package:mockito/mockito.dart';

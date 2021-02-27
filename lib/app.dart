@@ -17,17 +17,10 @@ class App extends StatelessWidget {
       getPages: Nav.routes,
       theme: theme(context),
       defaultTransition: Transition.cupertino,
-      // builder: (context, child) => GestureDetector(
-      //   onTap: () {
-      //     FocusManager.instance.primaryFocus.unfocus();
-      //   },
-      //   behavior: HitTestBehavior.opaque,
-      //   child: child,
-      // ),
       builder: (context, child) => ResponsiveWrapper.builder(
         child,
-        maxWidth: 1200,
-        minWidth: 480,
+        maxWidth: 2560,
+        minWidth: 1764,
         defaultScale: true,
         breakpoints: [
           ResponsiveBreakpoint.resize(480, name: MOBILE),

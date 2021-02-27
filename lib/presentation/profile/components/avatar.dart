@@ -12,7 +12,7 @@ class Avatar extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: Colors.red,
+        color: Colors.grey,
         image: DecorationImage(
           image: NetworkImage(avatarUrl),
         ),

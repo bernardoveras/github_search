@@ -9,8 +9,6 @@ ThemeData theme(context) => ThemeData(
   primaryColor: ColorsTheme.primaryColor,
   primaryColorDark: ColorsTheme.primaryColorDark,
   primaryColorLight: ColorsTheme.primaryColorLight,
-  cursorColor: ColorsTheme.primaryColor,
-  textSelectionHandleColor: ColorsTheme.primaryColor,
   scaffoldBackgroundColor: ColorsTheme.backgroundColor,
   backgroundColor: ColorsTheme.backgroundColor,
   dialogBackgroundColor: ColorsTheme.backgroundColor,
