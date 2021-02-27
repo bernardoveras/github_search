@@ -57,7 +57,7 @@ Gray: #B2B2B2<br>
 
 
 ## Modelo:
-O modelo final desktop está disponível na pasta `./design`<br>
+O modelo final desktop está disponível na pasta `.github`<br>
 Caso prefira, o layout esta disponivel no <a href="https://www.figma.com/file/m5JYqvEa6Zi4zZ7kkfMYJ1/Github-Search?node-id=3%3A28"> Figma </a><br>
 
 <p align="center">
