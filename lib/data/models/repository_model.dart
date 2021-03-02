@@ -14,12 +14,15 @@ class RepositoryModel extends Repository {
     @required int starsCount,
     /// [forks_count]
     @required int forksCount,
+    /// [html_url]
+    @required String url,
   }) : super(
           name: name,
           description: description,
           language: language,
           forksCount: forksCount,
           starsCount: starsCount,
+          url: url,
         );
 
   /// Function to convert `JSON` to `RepositoryModel`
@@ -33,6 +36,7 @@ class RepositoryModel extends Repository {
       language: json['language'],
       starsCount: json['stargazers_count'],
       forksCount: json['forks_count'],
+      url: json['html_url'],
     );
   }
 
@@ -45,5 +49,6 @@ class RepositoryModel extends Repository {
         language: language,
         forksCount: forksCount,
         starsCount: starsCount,
+        url: url,
       );
 }

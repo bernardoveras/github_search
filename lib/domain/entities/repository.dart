@@ -6,6 +6,7 @@ class Repository {
   final String language;
   final int starsCount;
   final int forksCount;
+  final String url;
 
   Repository({
     @required this.name,
@@ -13,6 +14,7 @@ class Repository {
     @required this.language,
     @required this.starsCount,
     @required this.forksCount,
+    @required this.url,
   });
 
   factory Repository.empty() {
@@ -22,6 +24,7 @@ class Repository {
       language: '',
       name: '',
       starsCount: 0,
+      url: '',
     );
   }
 }

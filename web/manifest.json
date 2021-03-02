@@ -3,9 +3,9 @@
     "short_name": "Github Search",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Github Search",
+    "background_color": "#232324",
+    "theme_color": "#8752CC",
+    "description": "",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

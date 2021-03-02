@@ -56,7 +56,7 @@ class ProfilePage extends GetView<ProfileController> {
                           followers: controller.profile.followers.toString(),
                           following: controller.profile.following.toString(),
                           location: controller.profile.location,
-                          totalStars: '10',
+                          totalStars: '0',
                         ),
                         SizedBox(height: 30),
                         TotalRepositories(controller.profile.publicRepos.toString()),
